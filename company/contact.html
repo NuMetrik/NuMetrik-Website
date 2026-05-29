@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — NuMetrik Systems</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo"><img src="../img/logo.svg" alt="NuMetrik Systems"></a>
+      <ul class="nav__links" id="nav-links">
+        <li class="has-dropdown">
+          <button class="nav__link-btn" aria-expanded="false" aria-haspopup="true">Company <span class="nav__arrow">▾</span></button>
+          <ul class="dropdown">
+            <li><a href="../company/about.html">About NuMetrik</a></li>
+            <li><a href="../company/team.html">Team</a></li>
+            <li><a href="../company/news.html">News</a></li>
+            <li><a href="../company/contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <button class="nav__link-btn" aria-expanded="false" aria-haspopup="true">Solutions <span class="nav__arrow">▾</span></button>
+          <ul class="dropdown">
+            <li><a href="../solutions/process-intelligence/index.html">Process Intelligence</a></li>
+            <li><a href="../solutions/connectivity/index.html">Connectivity</a></li>
+            <li><a href="../solutions/certainty/index.html">Certainty</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <button class="nav__link-btn" aria-expanded="false" aria-haspopup="true">By Role <span class="nav__arrow">▾</span></button>
+          <ul class="dropdown dropdown--wide">
+            <li><a href="../solutions/operators.html">Plant Operators</a></li>
+            <li><a href="../solutions/executives.html">Mining Executives</a></li>
+            <li><a href="../solutions/oem.html">OEMs &amp; Equipment Manufacturers</a></li>
+            <li><a href="../solutions/consultants.html">Consultants &amp; Engineers</a></li>
+            <li><a href="../solutions/research.html">Research Institutions</a></li>
+            <li><a href="../solutions/esg.html">ESG &amp; Regulators</a></li>
+          </ul>
+        </li>
+        <li><a href="../resources/index.html" class="nav__link-plain">Resources</a></li>
+        <li><a href="../company/contact.html" class="btn btn--primary nav__cta">Contact Us</a></li>
+      
+      <button class="nav__hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>Let's Start a Conversation</h1>
+      <p>Whether you're a mining operator exploring a pilot, a potential partner, an investor, or a researcher — tell us what you're working on and we'll respond directly.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container two-col">
+
+      <!-- FORM -->
+      <!-- [PLACEHOLDER: Wire form to a form service before launch — Formspree, Netlify Forms, or equivalent. Replace action attribute with actual endpoint.] -->
+      <div>
+        <h2 style="margin-bottom:1.5rem;">Send Us a Message</h2>
+        <form class="form" action="mailto:placeholder@numetrik.com" method="POST" enctype="text/plain">
+          <div class="form-row">
+            <div>
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Jane" />
+            </div>
+            <div>
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Smith" />
+            </div>
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          </div>
+          <div>
+            <label for="org">Company / Organisation</label>
+            <input type="text" id="org" name="org" placeholder="Your company" />
+          </div>
+          <div>
+            <label for="inquiry">I am reaching out as a…</label>
+            <select id="inquiry" name="inquiry">
+              <option value="">Select one</option>
+              <option value="operator">Plant Operator / Process Engineer</option>
+              <option value="executive">Mining Executive</option>
+              <option value="oem">OEM / Equipment Manufacturer</option>
+              <option value="consultant">Consultant / Engineering Firm</option>
+              <option value="investor">Investor</option>
+              <option value="research">Research Institution</option>
+              <option value="partner">Potential Technology Partner</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what you're working on or what you'd like to know. The more specific you are, the more useful our response will be."></textarea>
+          </div>
+          <!-- [PLACEHOLDER: Replace mailto action with real form endpoint (Formspree, Netlify, etc.) before launch] -->
+          <button type="submit" class="btn btn--primary" style="align-self:flex-start;">Send Message</button>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div style="padding-top:.5rem;">
+        <h2 style="margin-bottom:1.5rem;">Contact Details</h2>
+        <dl style="display:flex;flex-direction:column;gap:1.5rem;">
+          <div>
+            <dt style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem;">Email</dt>
+            <!-- [PLACEHOLDER: Replace with actual NuMetrik contact email] -->
+            <dd><a href="mailto:placeholder@numetrik.com" style="color:var(--text);">placeholder@numetrik.com</a></dd>
+            <dd style="font-size:.82rem;color:var(--muted);margin-top:.2rem;">Coming Soon</dd>
+          </div>
+          <div>
+            <dt style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem;">Location</dt>
+            <dd style="color:var(--text);">Ontario, Canada</dd>
+          </div>
+          <div>
+            <dt style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem;">LinkedIn</dt>
+            <!-- [PLACEHOLDER: LinkedIn company page URL — add when created] -->
+            <dd><a href="#" style="color:var(--text);">Coming Soon</a></dd>
+          </div>
+        </dl>
+
+        <div style="margin-top:2.5rem;">
+          <h3 style="margin-bottom:1rem;font-size:1rem;">What to expect</h3>
+          <div style="display:flex;flex-direction:column;gap:.75rem;font-size:.88rem;color:var(--muted);">
+            <div style="display:flex;gap:.75rem;align-items:flex-start;">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">→</span>
+              <span><strong style="color:var(--dark);">Pilot inquiry:</strong> We'll respond with specific questions about your pipe specifications, measurement challenges, and timeline. Expect a follow-up within 2 business days.</span>
+            </div>
+            <div style="display:flex;gap:.75rem;align-items:flex-start;">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">→</span>
+              <span><strong style="color:var(--dark);">Technical inquiry:</strong> Engineering questions get a direct engineering response. If your question requires more than an email answer, we'll schedule a call.</span>
+            </div>
+            <div style="display:flex;gap:.75rem;align-items:flex-start;">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">→</span>
+              <span><strong style="color:var(--dark);">Partnership inquiry:</strong> OEM, research, and technology partnership inquiries are reviewed by leadership and you'll receive a response within 3 business days.</span>
+            </div>
+            <div style="display:flex;gap:.75rem;align-items:flex-start;">
+              <span style="color:var(--gold);font-weight:700;flex-shrink:0;">→</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="nav__logo"><img src="../img/logo.svg" alt="NuMetrik Systems"></div>
+          <p>Process intelligence for mineral processing — real measurements, from outside the pipe.</p>
+        </div>
+        <nav class="footer__links" style="display:grid;grid-template-columns:repeat(3,auto);gap:.4rem 2rem;align-content:start;">
+          <a href="../solutions/process-intelligence/index.html">Process Intelligence</a>
+          <a href="../solutions/connectivity/index.html">Connectivity</a>
+          <a href="../solutions/certainty/index.html">Certainty</a>
+          <a href="../resources/index.html">Resources</a>
+          <a href="../company/about.html">Company</a>
+          <a href="../company/contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 NuMetrik Systems Inc. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
