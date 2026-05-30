@@ -1256,5 +1256,47 @@ p  { color: var(--muted); }
   .footer__inner { flex-direction: column; }
 }
 
+}
+
+/* ---- Additional 768px fixes ------------------------------ */
+@media (max-width: 768px) {
+  .form-row          { grid-template-columns: 1fr; }
+  .footer__inner     { flex-direction: column; }
+  .section           { padding: 3.5rem 0; }
+  .hero              { padding: 4rem 0 3rem; }
+  .page-hero         { padding: 2.75rem 0 2rem; }
+  .cta-block         { padding: 2.25rem 1.5rem; }
+  .partner-card      { padding: 1.5rem; }
+  .roi-calculator    { padding: 1.5rem; }
+  .focus-bar__sep:last-of-type,
+  .focus-bar__link   { display: none; }
+}
+
+/* ---- 600px fixes ----------------------------------------- */
 @media (max-width: 600px) {
-  .audience-router { grid-template-columns: 1fr; }
+  .pillar-grid       { grid-template-columns: 1fr; }
+  .cards             { grid-template-columns: 1fr; }
+  .section           { padding: 2.75rem 0; }
+  .hero              { padding: 3rem 0 2.5rem; }
+  .page-hero         { padding: 2.25rem 0 1.75rem; }
+  .cta-block         { padding: 1.75rem 1.25rem; }
+  .btn-row           { flex-direction: column; align-items: stretch; }
+  .btn-row .btn      { text-align: center; }
+  .partner-strip     { gap: 1.5rem; }
+  .pillar            { padding: 1.5rem; }
+
+  /* Team card — collapse float layout to stacked on small screens */
+  .team-card img[alt="Alex Gurevich"] {
+    float: none !important;
+    width: 140px !important;
+    margin: 0 auto 1.25rem !important;
+    display: block !important;
+  }
+  .team-card { text-align: center; }
+
+  /* Focus bar — hide overflow items */
+  .focus-bar__sep    { display: none; }
+  .focus-bar__text   { display: none; }
+  .focus-bar__link   { display: none; }
+  .focus-bar__inner  { justify-content: center; }
+}

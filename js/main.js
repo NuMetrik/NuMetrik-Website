@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!trigger) return;
 
     trigger.addEventListener('click', e => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 1040) {
         e.stopPropagation();
         const wasOpen = item.classList.contains('open');
         dropdowns.forEach(d => {
