@@ -87,13 +87,8 @@
           <p>Slurry is abrasive. Pipe wall thinning progresses continuously in high-velocity lines. Without ongoing wall thickness measurement, the first sign of a problem is often a breach: unplanned downtime, environmental incident, and an emergency repair on your timeline, not yours.</p>
         </div>
         <div class="card">
-          <h3>Pump Damage Without Early Warning</h3>
-          <p>Slurry pump cavitation begins as a detectable acoustic signature in the pipe, present long before impeller damage occurs. Without continuous monitoring for early cavitation indicators, mechanical degradation often progresses undetected until flow anomalies or vibration alarms appear.</p>
-          <p style="margin-top:.75rem;font-size:.82rem;color:var(--muted);">Note: Cavitation prediction is among the highest-value roadmap capabilities. Active R&amp;D is underway; it is not a current deploy-ready parameter.</p>
-        </div>
-        <div class="card">
           <h3>Compliance Data From Spot Samples</h3>
-          <p>Environmental reporting and mass balance closure often rely on periodic grab samples, which capture only isolated moments in a continuously varying process. Conditions between sample intervals may go unobserved.</p>
+          <p>Environmental reporting often relies on periodic grab samples, which capture only isolated moments in a continuously changing process and can leave gaps in what operators can see and report.</p>
         </div>
       </div>
     </div>
@@ -111,107 +106,56 @@
           <div class="detail-item__icon">☢</div>
           <div class="detail-item__body">
             <h4 style="color:var(--cream);">Nuclear / Radiometric Density Gauges</h4>
-            <p>The incumbent technology for slurry density measurement. Requires radioactive source licensing, ongoing radiation safety program management, periodic regulatory reporting, and eventual disposal of spent sources. Single-point cross-pipe measurement with no spatial resolution. Source decay requires periodic recalibration or source replacement.</p>
+            <p>A widely used incumbent technology for slurry density measurement. They require radioactive source licensing, radiation safety program management, periodic regulatory reporting, and eventual disposal of spent sources. They provide a single measurement across the pipe, with no spatial resolution. Source decay can require periodic recalibration and, over time, source replacement.</p>
           </div>
         </div>
         <div class="detail-item">
           <div class="detail-item__icon">⚙</div>
           <div class="detail-item__body">
             <h4 style="color:var(--cream);">Intrusive Magnetic Flowmeters</h4>
-            <p>Requires pipe penetration and wetted electrodes in direct contact with the slurry. Abrasive particles erode the liner and electrodes on a predictable schedule. Reliable in clean water applications; maintenance-intensive and failure-prone in high-solids slurry. Repair requires process interruption.</p>
+            <p>Require pipe penetration and wetted electrodes in direct contact with the slurry. In abrasive slurry service, the liner and electrodes can wear over time, increasing maintenance needs and sometimes causing unplanned process interruptions for repair.</p>
           </div>
         </div>
         <div class="detail-item">
           <div class="detail-item__icon">🧪</div>
           <div class="detail-item__body">
             <h4 style="color:var(--cream);">Manual Grab Sampling</h4>
-            <p>Still the primary method for slurry characterization at most operations. Captures discrete points, typically hourly or less frequently. Introduces measurement latency, labour cost, and analyst variability. Process excursions between sample intervals are undetected. Mass balance closures based on grab samples carry compounding uncertainty.</p>
+            <p>Widely used for slurry characterization, but it captures only discrete points in time. Sampling is often hourly or less frequent, which adds latency, labour cost, and analyst variability while leaving process excursions between samples unseen.</p>
           </div>
         </div>
         <div class="detail-item">
           <div class="detail-item__icon">📏</div>
           <div class="detail-item__body">
             <h4 style="color:var(--cream);">Differential Pressure and Coriolis Meters</h4>
-            <p>Differential pressure meters require flow restrictors in the pipe, vulnerable to scaling and blockage in mineral slurry. Coriolis meters require the full process flow to pass through a vibrating element; wear and plugging make them impractical in most slurry applications above moderate solids concentrations.</p>
+            <p>Differential pressure meters require flow restrictions in the pipe, which can be vulnerable to scaling and blockage in mineral slurry service. Coriolis meters require the full process flow to pass through a vibrating element, and wear or plugging can limit their practicality in slurry applications with higher solids content.</p>
           </div>
         </div>
         <div class="detail-item">
           <div class="detail-item__icon">〰</div>
           <div class="detail-item__body">
             <h4 style="color:var(--cream);">Non-Intrusive Flow Meters</h4>
-            <p>A genuine step forward: clamp-on instruments that measure bulk flow velocity without pipe penetration or wetted parts. The gap is in scope. Non-intrusive flow meters address flow and void fraction, but slurry density still requires a separate gauge alongside them. Pipe wall condition is not measured. For operations looking to eliminate the nuclear gauge or build a complete process measurement picture, the gap remains.</p>
+            <p>Clamp-on instruments offer a major step forward by measuring bulk flow velocity without pipe penetration or wetted parts. Their scope is still limited, though: they can measure flow and, in some cases, void fraction, but not the full slurry picture on their own. For operations that want to replace the nuclear gauge or understand the process more completely, important gaps can remain.</p>
           </div>
         </div>
         <div class="detail-item">
           <div class="detail-item__icon">🧬</div>
           <div class="detail-item__body">
             <h4 style="color:var(--cream);">Rheological Properties</h4>
-            <p>Inline rheological characterization is actively addressed by commercial instruments, but existing solutions each involve a compromise. Bypass loop viscometers divert a side-stream and introduce latency. Direct-insertion probes measure apparent viscosity at a single shear rate and require process contact in an abrasive environment. None delivers continuous, non-intrusive full flow curve characterization from outside the pipe without side-stream diversion. The most physically rigorous non-intrusive approach, combining ultrasonic velocity profiling with pipe pressure differential, sharing the same clamp-on transducer infrastructure as the measurement system. Full flow curve measurement from outside the pipe is a natural extension of the acoustic platform already in place for flow and density.</p>
+            <p>Inline rheological measurement is available, but existing solutions involve trade-offs. Bypass systems divert part of the process stream and add delay. Direct-contact probes measure viscosity at a point and must operate in abrasive slurry conditions. A fully non-intrusive, continuous view of the flow curve from outside the pipe remains an important gap.</p>
           </div>
         </div>
         <div class="detail-item">
           <div class="detail-item__icon">🔩</div>
           <div class="detail-item__body">
             <h4 style="color:var(--cream);">Equipment Health</h4>
-            <p>Conventional process instrumentation tells you what is flowing, not what is happening to the equipment carrying it. Pump cavitation, impeller erosion, bearing wear, and developing mechanical faults each produce characteristic signatures in the process stream and in the pipe wall, detectable acoustically before they manifest as flow anomalies or vibration alarms. Condition monitoring and process measurement are treated as separate disciplines with separate sensor systems. The result is that equipment failures announce themselves through the process data only after damage is already done.</p>
+            <p>Conventional process instrumentation shows what is flowing, but changes in flow can also reveal developing equipment problems earlier than typical monitoring methods. By capturing those changes continuously, flow characterization can provide an earlier signal that something in the equipment is starting to degrade.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- APPLICATION AREAS -->
-  <section class="section">
-    <div class="container">
-      <p class="eyebrow">Where It Applies</p>
-      <h2>Measurement Across the Mineral Processing Circuit</h2>
-      <p style="max-width:680px;margin-top:.75rem;">Process Intelligence is relevant at multiple points in a mineral processing plant. The measurement needs differ by circuit area, and so does the value delivered by continuous, accurate data.</p>
-
-      <div class="cards" style="margin-top:2.5rem;">
-        <div class="card">
-          <h3>Grinding Circuit</h3>
-          <p>SAG and ball mill discharge lines carry the highest-consequence slurry flows in the plant. Continuous flow and density measurement enables real-time feed characterization, optimised mill loading, and early detection of pipe wear in high-velocity discharge lines. Cavitation detection on pump lines provides early warning of mechanical stress before impeller damage occurs.</p>
-          <p style="margin-top:.75rem;font-size:.82rem;color:var(--muted);">Key parameters: volumetric flow · pipe wall thickness · slurry density (R&amp;D roadmap)</p>
-        </div>
-        <div class="card">
-          <h3>Flotation Feed</h3>
-          <p>Feed density and flow rate to the flotation bank directly affect reagent dosing efficiency and recovery. Continuous measurement replaces intermittent grab sampling, enabling tighter density control and more responsive reagent management. The difference between a process running at setpoint and one running on last hour's sample.</p>
-          <p style="margin-top:.75rem;font-size:.82rem;color:var(--muted);">Key parameters: flow velocity · slurry density (R&amp;D roadmap)</p>
-        </div>
-        <div class="card">
-          <h3>Tailings Transfer</h3>
-          <p>Tailings lines are long, high-wear transfer circuits where pipe condition monitoring has significant safety and environmental implications. Continuous wall thickness measurement provides an ongoing wear record without taking the line out of service. Continuous flow measurement supports mass balance closure and provides the audit trail that environmental reporting requires.</p>
-          <p style="margin-top:.75rem;font-size:.82rem;color:var(--muted);">Key parameters: volumetric flow · pipe wall thickness</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MARKET ENTRY -->
-  <section class="section section--dark">
-    <div class="container">
-      <p class="eyebrow">Market Entry</p>
-      <h2>Starting in Mineral Processing</h2>
-      <p style="max-width:660px;margin-top:.75rem;">NuMetrik's first Process Intelligence solution addresses these measurement challenges directly, deployed externally and without process interruption, and built on a proof base from one of the most demanding measurement environments on earth.</p>
-
-      <div class="cards" style="margin-top:2.5rem;">
-        <div class="card" style="border-color:#3a4a56;">
-          <h3 style="color:var(--cream);">The Entry Point</h3>
-          <p style="color:#a0b8c8;">Flow velocity, volumetric flow, and pipe wall thickness: three parameters immediately actionable in a mineral processing plant. Deployed now, from outside the pipe, without cutting the line or stopping the process.</p>
-        </div>
-        <div class="card" style="border-color:#3a4a56;">
-          <h3 style="color:var(--cream);">The Validation Path</h3>
-          <p style="color:#a0b8c8;">Entrained gas void fraction is in active validation for mineral processing conditions. Slurry density, particle size distribution, rheological properties, and cavitation detection are on the active R&D roadmap; signal processing algorithms for these parameters are in active development. Results are published as each program advances.</p>
-        </div>
-        <div class="card" style="border-color:#3a4a56;">
-          <h3 style="color:var(--cream);">Built to Expand</h3>
-          <p style="color:#a0b8c8;">The acoustic measurement physics generalise. Oil sands, cement, water treatment, and other natural resource industries have analogous measurement challenges. Mineral processing is the first entry point; the validated application record built here is the foundation for what follows.</p>
-        </div>
-      </div>
-
-      <div style="margin-top:2.5rem;">
-        <a href="flow/index.html" class="btn btn--primary">Technical Details</a>
-      </div>
+      <p style="max-width:820px;margin-top:2rem;font-size:.88rem;">
+        <a href="flow/index.html#measurement-capabilities" style="color:var(--gold);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(200,149,69,.35);padding-bottom:.1rem;">See what we can measure today →</a>
+      </p>
     </div>
   </section>
 
