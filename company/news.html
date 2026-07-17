@@ -13,9 +13,10 @@
     <div class="container nav__inner">
       <a href="../index.html" class="nav__logo"><img src="../img/logo.svg" alt="NuMetrik Systems"></a>
       <ul class="nav__links" id="nav-links">
+        <li><a href="../index.html" class="nav__link-plain">Home</a></li>
         <li><a href="../company/about.html" class="nav__link-plain">About Us</a></li>
         <li class="has-dropdown">
-          <button class="nav__link-btn" aria-expanded="false" aria-haspopup="true">Solutions <span class="nav__arrow">▾</span></button>
+          <button class="nav__link-btn" aria-expanded="false" aria-haspopup="true">Platform <span class="nav__arrow">▾</span></button>
           <ul class="dropdown">
             <li><a href="../solutions/process-intelligence/index.html">Characterization</a></li>
             <li><a href="../solutions/connectivity/index.html">Connectivity</a></li>
@@ -88,21 +89,9 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <div class="nav__logo"><img src="../img/logo.svg" alt="NuMetrik Systems"></div>
-        </div>
-        <nav class="footer__links" style="display:grid;grid-template-columns:repeat(3,auto);gap:.4rem 2rem;align-content:start;">
-          <a href="../solutions/process-intelligence/index.html">Characterization</a>
-          <a href="../solutions/connectivity/index.html">Connectivity</a>
-          <a href="../solutions/certainty/index.html">Certainty</a>
-          <a href="../resources/index.html">Resources</a>
-          <a href="../company/about.html">Company</a>
-          <a href="../company/contact.html">Contact</a>
-        </nav>
-      </div>
-      <div class="footer__bottom">
-        &copy; 2026 NuMetrik Systems Inc. All rights reserved.
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <p style="font-size:.8rem;color:var(--muted);">&copy; 2026 NuMetrik Systems Inc. All rights reserved.</p>
+        <div class="nav__logo"><img src="../img/logo.svg" alt="NuMetrik Systems"></div>
       </div>
     </div>
   </footer>
